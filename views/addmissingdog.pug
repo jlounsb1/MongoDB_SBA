@@ -1,0 +1,19 @@
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        h1 This will be the place where a form is rendered to add a missing dog.
+        h1 Please add you dogs info so we can help find them! 
+        form(action="/add" method="POST")
+            label(name="name") Dog's name:
+            input(type="text" name="name")
+            br
+            label(name="location_lost") Location:
+            input(type="text" name="location_lost")
+            br
+            input(type="submit" name="submit" value="Submit")
+        p Thank you, I hope your dog comes home soon.

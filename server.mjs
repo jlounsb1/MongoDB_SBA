@@ -26,6 +26,11 @@ app.get("/", (req, res) =>{
     )
 })
 
+app.post("/", (req, res) =>{
+    res.send(`${req.body}`)
+})
+
+
 app.use((err, _req, res, next) => {
     res.status(500).send("Ok now it seems we are lost, not the dogs...");
   });
