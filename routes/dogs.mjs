@@ -1,11 +1,13 @@
 import express from "express";
 import Dog from "../models/dogs.mjs"
-import dogSeeds from "../seeddata/dogseeds.mjs";
 const router = express.Router();
 console.log(Dog)
 
+
 //Home for dog route
 router.get("/", async (req, res) => {
+    let mydog = await Dog.findById('669ff8e9d07d10fcf0bd8217')
+    console.log(`Test to see if I can actually pull from my database: ${mydog}`)
     await res.send("This is where we will list lost dogs.")
 })
 //home page for adding a lost dog. Might combine this with the base page.
@@ -21,13 +23,7 @@ router.post("/add", async (req, res) =>{
     res.send(result).status(204);
 })
 
-//data seed route, execute when user visits page
-router.get("/seed", async (req, res) => {
-    await Dog.deleteMany({});
-    await Dog.insertMany({dogSeeds})
-    console.log(Dog, dogSeeds)
-    res.send('Document reset and seeded, thank you.')
-})
+
 
 
 export default router;
