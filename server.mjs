@@ -6,8 +6,12 @@ import mongoose from "mongoose";
 const PORT = 3000;
 const app = express();
 
+import dogs from "./routes/dogs.mjs";
+
 app.use(express.json());
 await mongoose.connect(process.env.ATLAS_URI)
+
+app.use("/dogs", dogs)
 
 app.get("/", (req, res) =>{
     res.send("Let's find some Dogs!")
