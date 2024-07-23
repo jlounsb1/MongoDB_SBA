@@ -1,19 +1,21 @@
 import mongoose from "mongoose"
 
-const ownerSchema = new mongoose.Schema({
-    owner_name:String,
-    owner_phone:String,
-    owner_email:String
-})
-
 const dogSchema = new mongoose.Schema({
-    name: String,
-    location_lost: String,
-    description: String,
-    content: String,
+    name: {
+        type:String
+    },
+    location_lost: {
+        type:String
+    },
+    description: {type: String},
+    content: {type:String},
     personality: [String],
-    owner_information: {ownerSchema},
-    found:Boolean
+    owner_information: {
+        owner_name:{type:String},
+        owner_phone:{type:String},
+        owner_email:{type:String}
+    },
+    found:{type:Boolean}
 })
 
 
