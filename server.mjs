@@ -4,7 +4,8 @@ dotenv.config();
 import mongoose from "mongoose";
 import pug from "pug";
 import fs from "fs";
-
+import User from "./models/users.mjs"
+import Comment from "./models/comments.mjs"
 
 const PORT = 3000;
 const app = express();
@@ -26,8 +27,18 @@ app.get("/", (req, res) =>{
     )
 })
 
-app.post("/", (req, res) =>{
-    res.send(`${req.body}`)
+app.post("/", async (req, res) =>{
+    console.log(req.body.name, req.body.password)
+    let username = req.body.name;
+    let password = req.body.password;
+    let result = {
+        username: username,
+        password: password
+    }
+    console.log(result)
+    await User.create(result)
+    res.send(`logged in`)
+    //I can get blank information to upload, but I can't get the post to fill info
 })
 
 
