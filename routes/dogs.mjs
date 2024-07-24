@@ -36,6 +36,12 @@ router.post("/add", async (req, res) =>{
     res.send(result).status(204);
 })
 
+router.get("/:id/comments", async (req, res) =>{
+    console.log(req.params.id)
+    res.render(
+        'addcomment'
+    )
+})
 
 
 

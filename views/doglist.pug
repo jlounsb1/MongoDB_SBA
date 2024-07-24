@@ -16,6 +16,8 @@ html(lang="en")
             p= "Owner's Name: " + doggo.owner_name 
             p= "Owner's Phone: " + doggo.owner_phone 
             p= "Owner's Email: " + doggo.owner_email 
-            hr
-            a(href=`/`)
-                button home 
+            a(href=`/dogs/${doggo._id}/comments`)
+                button read comments
+        hr
+        a(href=`/`)
+            button home 
