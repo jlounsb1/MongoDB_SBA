@@ -29,9 +29,9 @@ router.get("/add", async (req, res) => {
 })
 //post route for add to enter a single entry.
 router.post("/add", async (req, res) =>{
-    // let dogCollection = await Dog;
+    
     let newLostDog = req.body;
-    console.log(req.body.name)
+    console.log(newLostDog)
     let result = await Dog.create(newLostDog);
     res.send(result).status(204);
 })

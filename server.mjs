@@ -35,7 +35,7 @@ app.post("/", async (req, res) =>{
 
     let result = req.body;
     await User.create(result)
-    res.send(`You have signed up`)
+    res.send('user created, thank you')
     //I can get blank information to upload, but I can't get the post to fill info
 })
 
