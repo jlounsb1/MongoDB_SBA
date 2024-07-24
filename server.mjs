@@ -7,12 +7,16 @@ import fs from "fs";
 import User from "./models/users.mjs"
 import Comment from "./models/comments.mjs"
 
+
 const PORT = 3000;
 const app = express();
 
 import dogs from "./routes/dogs.mjs";
 
 app.use(express.json());
+app.use(express.urlencoded())
+//I spend a whole day on this darn thing trying to figure out why my req.body were coming back as blank documents. just needed the above code....
+
 await mongoose.connect(process.env.ATLAS_URI)
 
 //needed for pug to work
@@ -28,16 +32,10 @@ app.get("/", (req, res) =>{
 })
 
 app.post("/", async (req, res) =>{
-    console.log(req.body.name, req.body.password)
-    let username = req.body.name;
-    let password = req.body.password;
-    let result = {
-        username: username,
-        password: password
-    }
-    console.log(result)
+
+    let result = req.body;
     await User.create(result)
-    res.send(`logged in`)
+    res.send(`You have signed up`)
     //I can get blank information to upload, but I can't get the post to fill info
 })
 
