@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Missing Cat List
+    body 
+        h1 Here is a list of missing cats: 
+        -const CatsList = Cat
+        for catgo in CatsList 
+            hr
+            h3= "Name: " + catgo.name 
+            p= "Location Lost: " + catgo.location_lost 
+            p= "Description of cat: " + catgo.description 
+            p= "Additional Notes: " + catgo.content 
+            p= "Owner's Name: " + catgo.owner_name 
+            p= "Owner's Phone: " + catgo.owner_phone 
+            p= "Owner's Email: " + catgo.owner_email 
+            a(href=`/cats/${catgo._id}/comments`)
+                button read comments
+            br
+            br
+            form(action='/cats' method="Delete")
+                button cat Found, remove from list
+        hr
+        a(href=`/`)
+            button home 

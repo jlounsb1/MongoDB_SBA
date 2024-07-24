@@ -12,6 +12,7 @@ const PORT = 3000;
 const app = express();
 
 import dogs from "./routes/dogs.mjs";
+import cats from "./routes/cats.mjs"
 
 app.use(express.json());
 app.use(express.urlencoded())
@@ -24,6 +25,8 @@ app.set("views", "./views");
 app.set('view engine', 'pug');
 
 app.use("/dogs", dogs)
+app.use("/cats", cats)
+
 
 app.get("/", (req, res) =>{
     res.render(

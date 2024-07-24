@@ -19,6 +19,7 @@ router.get("/", async (req, res) => {
     )
 })
 
+// router.get('/:id')
 
 
 //home page for adding a lost dog. Might combine this with the base page.
@@ -36,12 +37,18 @@ router.post("/add", async (req, res) =>{
     res.send(result).status(204);
 })
 
-router.get("/:id/comments", async (req, res) =>{
-    console.log(req.params.id)
-    res.render(
-        'addcomment'
-    )
-})
+// router.get("/:id/comments", async (req, res) =>{
+//     console.log(req.params.id)
+//     let merp = await Comment.find({dog:req.params.id})
+//     console.log(merp)
+//     res.render(
+//         'addcomment',
+//         {
+//             merp:merp
+//         }
+//     )
+// })
+//could not get comments to work, setting aside for now
 
 
 

@@ -1,7 +1,7 @@
 import mongoose from "mongoose"
 
 
-const dogSchema = new mongoose.Schema({
+const catSchema = new mongoose.Schema({
     name: {type:String},
     location_lost: {type:String},
     description: {type: String},
@@ -14,5 +14,5 @@ const dogSchema = new mongoose.Schema({
 
 
 
-export default mongoose.model('Dog', dogSchema)
+export default mongoose.model('Cat', catSchema)
 
