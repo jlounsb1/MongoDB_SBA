@@ -4,12 +4,8 @@
         "location_lost": "123 Fake St, Testville, MA 25689",
         "description": "He is the best and loves people, scared of other dogs and will chase any other animal ever.",
         "content": "This is a test item to see if I can seed my database.",
-        "personality": ["treat motivated", "loves people", "seperation anxiety", "loves ear scratches"],
-        "owner_information": {
-            "owner_name": "Jeff Lounsbury",
-            "owner_phone": "1-800-notmyrealnumber",
-            "owner_email": "example@example.email"
-        },
-        "found":true
+        "owner_name": "Jeff Lounsbury",
+        "owner_phone": "1-800-notmyrealnumber",
+        "owner_email": "example@example.email"
     }
 ]

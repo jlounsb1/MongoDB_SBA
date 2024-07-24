@@ -6,4 +6,16 @@ html(lang="en")
         title Missing Dog List
     body 
         h1 Here is a list of missing dogs: 
-        
+        -const dogsList = Dog
+        for doggo in dogsList 
+            hr
+            h3= "Name: " + doggo.name 
+            p= "Location Lost: " + doggo.location_lost 
+            p= "Description of Dog: " + doggo.description 
+            p= "Additional Notes: " + doggo.content 
+            p= "Owner's Name: " + doggo.owner_name 
+            p= "Owner's Phone: " + doggo.owner_phone 
+            p= "Owner's Email: " + doggo.owner_email 
+            hr
+            a(href=`/`)
+                button home 

@@ -10,8 +10,12 @@ router.get("/", async (req, res) => {
     // let mydog = await Dog.findById('669ff8e9d07d10fcf0bd8217')
     // console.log(`Test to see if I can actually pull from my database: ${mydog}`)
     // await res.send(`${await Dog.find({})} This is where we will list lost dogs. ${mydog}`)
+    let dogsList = await Dog.find({});
     res.render(
-        'doglist'
+        'doglist',
+        {
+            Dog: dogsList
+        }
     )
 })
 
@@ -19,7 +23,7 @@ router.get("/", async (req, res) => {
 
 //home page for adding a lost dog. Might combine this with the base page.
 router.get("/add", async (req, res) => {
-    await res.render(
+    res.render(
         'addmissingdog'
     )
 })
