@@ -16,6 +16,13 @@ router.get("/", async (req, res) => {
 })
 
 
+// router.get('/byname/:id', async (req, res) =>{
+//     try{
+//        await Dog.find().byName(req.params.id).exec((err, animals)=>{res.send(animals)})
+//     } catch (e) {res.status(500).send(e)}
+// })
+//I am getting the 500 error returned and my response displays as an empty object. I was trying to set up a search query as part of the schema.
+
 //home page for adding a lost dog. Might combine this with the base page.
 router.get("/add", async (req, res) => {
     res.render(
