@@ -10,6 +10,33 @@ html(lang="en")
 
     form(action=`/cats/${thisCat}/editcat` method="post")
         button cat Has been found, remove from list
+    br
+    hr
+    h3 Please update cat info so we can help find them! 
+    form(action=`/cats/${thisCat}/updatecat` method="POST")
+        label(name="name") Cat's name:
+        input(type="text" name="name")
+        br
+        label(name="location_lost") Location Lost:
+        input(type="text" name="location_lost")
+        br
+        label(name="description") Description: 
+        input(type="text" name="description")
+        br
+        label(name="content") Notes and other information: 
+        input(type="text" name="content")
+        br
+        label(name="owner_name") Owner Name: 
+        input(type="text" name="owner_name")
+        br
+        label(name="owner_phone") Owner Phone: 
+        input(type="text" name="owner_phone")
+        br
+        label(name="owner_email") Owner Email: 
+        input(type="text" name="owner_email")
+        br
+        button Update
+        //- button Update Their information
     p Thank You, I'm sure this helps.
     a(href='/cats')
         button Back

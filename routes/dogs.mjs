@@ -59,6 +59,15 @@ router.delete("/:id/editdog", async (req, res) =>{
     //This delete route works, but I cannot get the pug form to register it
 })
 
+router.put("/:id/updatedog", async (req, res) =>{
+    let thisDog = req.params.id
+    let newLostDog = req.body;
+    console.log(newLostDog, thisDog)
+    let result = await Dog.findByIdAndUpdate(thisDog, newLostDog);
+    res.send(result).status(204);
+    //I can get the info to send when I manually add it in thunderclient, but the pug interface isnt working, and therefor req.body has nothing in it.
+})
+
 
 
 export default router;
