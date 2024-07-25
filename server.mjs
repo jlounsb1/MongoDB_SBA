@@ -6,7 +6,7 @@ import pug from "pug";
 import fs from "fs";
 import User from "./models/users.mjs"
 
-
+//attempting to make index in the dogs collection through mongo Compass
 
 const PORT = 3000;
 const app = express();

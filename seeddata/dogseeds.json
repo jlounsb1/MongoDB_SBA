@@ -7,5 +7,86 @@
         "owner_name": "Jeff Lounsbury",
         "owner_phone": "1-800-notmyrealnumber",
         "owner_email": "example@example.email"
+    },
+    {
+        "name": "Molly",
+        "location_lost": "33 Fake St, Testville, MA 25689",
+        "description": "4 month old Aussie Shepard Mix female.",
+        "content": "She lives across the street, and is a big fan of my dog and our backyard",
+        "owner_name": "Merp Lounsbury",
+        "owner_phone": "1-800-notmyrealnumber",
+        "owner_email": "example@example.email"
+    },
+    {
+        "name": "Rufus",
+        "location_lost": "99 Made Up Ave, Testville, MA 25689",
+        "description": "3 Year old Golden Retriever.",
+        "content": "He loves the backyard runs with Radar, will rollover for belly scratches.",
+        "owner_name": "Merp McMerperson",
+        "owner_phone": "1-800-notmyrealnumber",
+        "owner_email": "example@example.email"
+    },
+    {
+        "name": "Birde",
+        "location_lost": "8875 Made Up Ave, Testville, MA 25689",
+        "description": "2 month old mix.",
+        "content": "Right next door, has some puppy illness.",
+        "owner_name": "Miss Smerg McMerperson",
+        "owner_phone": "1-800-notmyrealnumber",
+        "owner_email": "example@example.email"
+    },
+    {
+        "name": "Link",
+        "location_lost": "8875 Dog Lane, Testville, MA 25689",
+        "description": "3 month old little one.",
+        "content": "A couple doors down, little one name after a game so I'm always a fan.",
+        "owner_name": "The Legend of Zelda",
+        "owner_phone": "1-800-notmyrealnumber",
+        "owner_email": "example@example.email"
+    },
+    {
+        "name": "Midgnight",
+        "location_lost": "8875 Made Up Ave, Testville, MA 25689",
+        "description": "7 year old lab mix.",
+        "content": "one of Radars best friends since puppyhood. He is a tank and is scared of other dogs, but a sweety at heart.",
+        "owner_name": "Professor Scratches",
+        "owner_phone": "1-800-notmyrealnumber",
+        "owner_email": "example@example.email"
+    },
+    {
+        "name": "Robbie",
+        "location_lost": "8875 Fakeway Ave, Testville, MA 25689",
+        "description": "2 year old shepard mix.",
+        "content": "Super shy little guy, but always stops by the house because radar is patient with him.",
+        "owner_name": "Red Auerbach",
+        "owner_phone": "1-800-notmyrealnumber",
+        "owner_email": "example@example.email"
+    },
+    {
+        "name": "Jasmin",
+        "location_lost": "664 FellsDrive Dr, Testville, MA 25689",
+        "description": "Senior citizen, literally only friends with radar.",
+        "content": "Will be scared of literally any dog but Radar, they are pretend boyfriend girlfriend, and she is one of the only dogs who has been in the house.",
+        "owner_name": "Miss Smerg McMerperson",
+        "owner_phone": "1-800-notmyrealnumber",
+        "owner_email": "example@example.email"
+    },
+    {
+        "name": "Bruce",
+        "location_lost": "15 Longview Terrace, Testville, MA 25689",
+        "description": "This little guys runs with his marathon running dad.",
+        "content": "Tiny little guy is constantly on the move with an active family.",
+        "owner_name": "Dad Runnerson",
+        "owner_phone": "1-800-notmyrealnumber",
+        "owner_email": "example@example.email"
+    },
+    {
+        "name": "Three legged barkbox",
+        "location_lost": "123 Main St, Testville, MA 25689",
+        "description": "Three legs big black dog.",
+        "content": "Lives around the corner, always gets in staring contents with Radar, and therefore have not had good experiences. Owner is a frail older lady who looks like she would be dragged around by the dog, even with the missing leg. Be wary.",
+        "owner_name": "Lady Bad Hair Dye",
+        "owner_phone": "1-800-notmyrealnumber",
+        "owner_email": "example@example.email"
     }
 ]

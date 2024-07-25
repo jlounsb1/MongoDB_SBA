@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Catdar",
+        "location_lost": "123 Fake St, Testville, MA 25689",
+        "description": "Like Radar, but a cat, and therefore worse.",
+        "content": "This is a test item to see if I can seed my database.",
+        "owner_name": "Jeff Lounsbury",
+        "owner_phone": "1-800-notmyrealnumber",
+        "owner_email": "example@example.email"
+    },
+    {
+        "name": "Cally",
+        "location_lost": "33 Fake St, Testville, MA 25689",
+        "description": "4 month old whirlwind.",
+        "content": "She lives across the street, stares at us menacingly from the window.",
+        "owner_name": "Merp Lounsbury",
+        "owner_phone": "1-800-notmyrealnumber",
+        "owner_email": "example@example.email"
+    },
+    {
+        "name": "Catus",
+        "location_lost": "99 Made Up Ave, Testville, MA 25689",
+        "description": "3 Year old orange cat.",
+        "content": "You know like Rufus, but, like, a Cat.",
+        "owner_name": "Merp McMerperson",
+        "owner_phone": "1-800-notmyrealnumber",
+        "owner_email": "example@example.email"
+    },
+    {
+        "name": "Kitty",
+        "location_lost": "8875 Made Up Ave, Testville, MA 25689",
+        "description": "2 month old mix.",
+        "content": "UI couldn't think of a better fake name.",
+        "owner_name": "Miss Smerg McMerperson",
+        "owner_phone": "1-800-notmyrealnumber",
+        "owner_email": "example@example.email"
+    },
+    {
+        "name": "Clink",
+        "location_lost": "8875 Dog Lane, Testville, MA 25689",
+        "description": "3 month old little one.",
+        "content": "A couple doors down, little one name after a game so I'm always a fan, adjusted spelling for funzies.",
+        "owner_name": "The Legend of Zelda",
+        "owner_phone": "1-800-notmyrealnumber",
+        "owner_email": "example@example.email"
+    },
+    {
+        "name": "Catnight",
+        "location_lost": "8875 Made Up Ave, Testville, MA 25689",
+        "description": "7 year old loudmouth.",
+        "content": "Literally won't stop meowing until dinner. Starts at 7AM.",
+        "owner_name": "Professor Scratches",
+        "owner_phone": "1-800-notmyrealnumber",
+        "owner_email": "example@example.email"
+    },
+    {
+        "name": "Cabbie",
+        "location_lost": "8875 Fakeway Ave, Testville, MA 25689",
+        "description": "2 year old tabby mix.",
+        "content": "Super shy little guy, but Radar is patient with him.",
+        "owner_name": "Red Auerbach",
+        "owner_phone": "1-800-notmyrealnumber",
+        "owner_email": "example@example.email"
+    },
+    {
+        "name": "Jass",
+        "location_lost": "664 FellsDrive Dr, Testville, MA 25689",
+        "description": "Senior citizen, literally only friends with radar, which is iimpressive for a cat.",
+        "content": "Will be scared of literally any dog but Radar, they are pretend boyfriend girlfriend, and she is one of the only dogs who has been in the house.",
+        "owner_name": "Miss Smerg McMerperson",
+        "owner_phone": "1-800-notmyrealnumber",
+        "owner_email": "example@example.email"
+    },
+    {
+        "name": "Stray",
+        "location_lost": "15 Longview Terrace, Testville, MA 25689",
+        "description": "This little guys runs with his marathon running dad, but just around the house.",
+        "content": "Tiny little guy is constantly on the move with an active family I assume inside.",
+        "owner_name": "Dad Runnerson",
+        "owner_phone": "1-800-notmyrealnumber",
+        "owner_email": "example@example.email"
+    },
+    {
+        "name": "Three legged MeowBox",
+        "location_lost": "123 Main St, Testville, MA 25689",
+        "description": "Three legs big black cat.",
+        "content": "I don't want to use Lorem Ipsum so I am just copying most of the dog info and adjusting some stuff, time will be spent on functionality.",
+        "owner_name": "Lady Bad Hair Dye",
+        "owner_phone": "1-800-notmyrealnumber",
+        "owner_email": "example@example.email"
+    }
+]
