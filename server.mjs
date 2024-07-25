@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 import pug from "pug";
 import fs from "fs";
 import User from "./models/users.mjs"
-import Comment from "./models/comments.mjs"
+
 
 
 const PORT = 3000;

@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+    h1 Missing Cat Information
+    h3 selected Cat:  #{resultName}
+
+    form(action=`/cats/${thisCat}/editcat` method="post")
+        button cat Has been found, remove from list
+    p Thank You, I'm sure this helps.
+    a(href='/cats')
+        button Back
