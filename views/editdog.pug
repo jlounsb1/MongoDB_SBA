@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+    h1 Missing Dog Information
+    h3 selected dog:  #{resultName}
+
+    form(action=`/dogs/${thisDog}/editdog` method="post")
+        button Dog Has been found, remove from list
+    p Thank You, I'm sure this helps.
+    a(href='/dogs')
+        button Back

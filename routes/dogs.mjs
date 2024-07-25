@@ -1,6 +1,6 @@
 import express from "express";
 import Dog from "../models/dogs.mjs"
-import Comment from "../models/comments.mjs"
+
 const router = express.Router();
 console.log(Dog)
 
@@ -37,18 +37,33 @@ router.post("/add", async (req, res) =>{
     res.send(result).status(204);
 })
 
-// router.get("/:id/comments", async (req, res) =>{
-//     console.log(req.params.id)
-//     let merp = await Comment.find({dog:req.params.id})
-//     console.log(merp)
-//     res.render(
-//         'addcomment',
-//         {
-//             merp:merp
-//         }
-//     )
-// })
-//could not get comments to work, setting aside for now
+router.get("/:id/editdog", async (req, res) =>{
+    let thisDog = req.params.id
+    let result = await Dog.findById(thisDog)
+    let resultName = result.name
+    console.log(result.name)
+    console.log(req.params.id)
+    res.render(
+        'editdog',
+        {
+            resultName: resultName,
+            thisDog:thisDog
+        }
+    )
+})
+
+router.delete("/:id/editdog", async (req, res) =>{
+    let thisDog = req.params.id;
+    console.log(req.params.id, thisDog)
+    try{
+        const foundDog = await Dog.findByIdAndDelete(thisDog);
+        res.send(foundDog)
+    }catch(e){
+        console.error(e)
+        res.status(500). send(e)
+    }
+    //This delete route works, but I cannot get the pug form to register it
+})
 
 
 

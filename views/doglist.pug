@@ -16,12 +16,9 @@ html(lang="en")
             p= "Owner's Name: " + doggo.owner_name 
             p= "Owner's Phone: " + doggo.owner_phone 
             p= "Owner's Email: " + doggo.owner_email 
-            a(href=`/dogs/${doggo._id}/comments`)
-                button read comments
+            a(href=`/dogs/${doggo._id}/editdog`)
+                button Edit Dog Information
             br
-            br
-            form(action='/dogs' method="Delete")
-                button Dog Found, remove from list
         hr
         a(href=`/`)
             button home 
